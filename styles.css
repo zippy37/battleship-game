@@ -1,0 +1,155 @@
+:root {
+    --bg-light: rgb(240,240,250);
+    --bg-darker: rgb(100,80,110);
+    --bg-darkest: rgb(50, 40, 70);
+    --bg-purple: rgb(30,20,50);
+  }
+
+body {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.main-container {
+    /* padding: 50px; */
+    height: 600px;
+}
+
+#game-board-container {
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-board {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    outline: 5px solid black;
+    box-sizing: border-box;
+}
+
+.block {
+    width: 50px;
+    height: 50px;
+    /* outline: solid 1px var(--bg-darker); */
+}
+
+.option-container {
+    width: 400px;
+    height: 300px;
+    background-color: yellow;
+    display: grid;
+    justify-content: center;
+    overflow: visible;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.option-container div {
+    margin: -45px;
+}
+
+
+.destroyer {
+    background-color: brown;
+}
+
+/* :nth-child(-n + 1 of div.destroyer) {
+    background-image:url(./ships/destroyer.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    align-content: stretch;
+    width: 50px;
+    height: 100px;
+} */
+
+.destroyer-preview {
+    background-image:url(./ships/destroyer.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+}
+
+.submarine {
+    background-color: green;
+}
+
+.submarine-preview {
+    background-image:url(./ships/submarine.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 150px;
+    height: 50px;
+    margin: 5px;
+}
+
+.cruiser {
+    background-color: purple;
+}
+
+.cruiser-preview {
+    background-image:url(./ships/cruiser.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 150px;
+    height: 50px;
+    margin: 5px;
+}
+
+.battleship {
+    background-color: orange;
+}
+
+.battleship-preview {
+    background-image:url(./ships/battleship.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 200px;
+    height: 50px;
+    margin: 5px;
+}
+
+.carrier {
+    background-color: blue;
+}
+
+.carrier-preview {
+    background-image:url(./ships/carrier.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 240px 50px;
+    width: 250px;
+    height: 50px;
+    margin: 5px;
+}
+
+
+.hover {
+    background-color: grey;
+}
+
+#computer .destroyer,
+#computer .submarine,
+#computer .cruiser,
+#computer .battleship,
+#computer .carrier {
+    background-color: pink;
+}
+
+
+.boom {
+    background-color: red !important;
+}
+
+.empty {
+    background-color: gray !important;
+}
